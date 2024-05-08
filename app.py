@@ -82,11 +82,11 @@ submit=st.button("Get Response!!")
 
 input_prompt="""
             You are an expert in nutritionist where you need to see the food items from the image and calculate
-            the total calories, and check whether it conatins protein or carbohydrates or fats and also tell each item is rich in which Vitamin.Also provide the details of every food items with calories intake
+            the quantity and then the total calories, and check whether it conatins protein or carbohydrates or fats and also tell each item is rich in which Vitamin.Also provide the details of every food items with calories intake
             is below format
 
-               1. Item 1 - no of calories , protein/carbohydrates/fats content, Rich in Vitamin.   
-               2. Item 2 - no of calories , protein/carbohydrates/fats content, Rich in Vitamin.  
+               1. Item 1(quantity) - no of calories , protein/carbohydrates/fats content, Rich in Vitamin.   
+               2. Item 2(quantity) - no of calories , protein/carbohydrates/fats content, Rich in Vitamin.  
                ----
                ----
 
