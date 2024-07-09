@@ -22,7 +22,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 ## Function to load Google Gemini Pro Vision API And get response
 
 def get_gemini_repsonse(input,image,prompt):
-     model=genai.GenerativeModel('gemini-1.5-flash')
+     model=genai.GenerativeModel('gemini-1.5-pro')
      response=model.generate_content([input,image[0],prompt])
      return response.text
 
@@ -83,7 +83,7 @@ submit=st.button("Get Response!!")
 input_prompt="""
             You are an expert in nutritionist where you need to see the food items from the image and calculate
             the quantity and then the total calories, and check whether it conatins protein or carbohydrates or fats and also tell each item is rich in which Vitamin.Also provide the details of every food items with calories intake
-            is below format
+            and do not mention that you are an AI can can't check the nutrion value and do response in below format
 
                1. Item 1(quantity) - no of calories , protein/carbohydrates/fats content, Rich in Vitamin.   
                2. Item 2(quantity) - no of calories , protein/carbohydrates/fats content, Rich in Vitamin.  
